@@ -11,6 +11,7 @@ const month = date.getMonth();
 console.log(month);
 
 monthDisplay.innerHTML = months[month];
+document.getElementById('p2').innerHTML = day;
 console.log(monthDisplay.innerHTML);
 
 
@@ -52,7 +53,7 @@ function daysOftheMonth(j) {
 
         if(i == day) {
            
-           list.outerHTML = '<li><div class="active"></div>'+ day + '</li>';
+           list.outerHTML = '<li><div class="active">'+i+'</div></li>';
            continue;
         }
         

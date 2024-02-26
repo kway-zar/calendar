@@ -33,11 +33,17 @@ html {
 }
 
 
-#p {
+p {
     transform:translateY(-1in);
     font-size: 2in;
     
     color: white;
+
+}
+#p2 {
+    margin: auto;
+    padding-left: 16.4in;
+    transform: translateY(-5.2in);
 
 }
 
@@ -82,13 +88,17 @@ html {
 #days li .active {
     
     text-decoration-line: underline overline;
-    background-color: rgb(0, 0, 0);
+    font-size:50px;
+    font-weight: bold;
+    
   }
 
 #days li:hover {
     padding: 30px;
     background-color: #b5e4da;
-    transition: 1s;
+    transition:1s;
+    animation: bg-change 10s infinite;
+    
 }
 #days li:not(:hover) {
     padding:0;
